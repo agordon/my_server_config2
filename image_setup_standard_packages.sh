@@ -15,10 +15,10 @@ fi
 ##
 ## Start with standard debian pacakges.
 ##
-apt-get update -y
-apt-get upgrade -y
+apt-get update -y || exit 1
+apt-get upgrade -y || exit 1
 apt-get install -y \
-       	build-essential clang gfortran \
+	build-essential clang gfortran \
 	autoconf automake libtool gettext autoconf-archive \
 	git mercurial vim ctags vim-scripts scons meld cmake \
 	unzip less graphviz gnuplot gawk \
@@ -26,12 +26,12 @@ apt-get install -y \
 	libcurl3-dev curl \
 	python-dev python-pip \
 	libgcrypt-dev \
-	libblas-dev libblas-test \ 
-	liblapasck-test liblapack-dev \
+	libblas-dev libblas-test \
+	liblapack-test liblapack-dev \
 	libmysqlclient-dev  libsqlite3-dev sqlite3  libatlas-dev \
 	libxml2-dev libxslt-dev libfreetype6-dev libpng-dev libjpeg-dev \
-	libfftw3-bin libfftw3-dev libncurses5-dev libboost-dev-all \
-	ruby libbz2-dev libexpat-dev \
+	libfftw3-bin libfftw3-dev libncurses5-dev libboost-dev \
+	ruby libbz2-dev libexpat-dev || exit 1
 
 
 ##
