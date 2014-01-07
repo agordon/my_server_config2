@@ -104,3 +104,18 @@ make || exit 1
 sudo -p "Enter SUDO password to install 'tabix': " cp bgzip tabix /usr/local/bin/
 cd .. || exit 1
 
+
+##
+## JQ - JSON sed/awk/grep
+##
+if [ ! -d "jq" ]; then
+	git clone https://github.com/stedolan/jq.git || exit 1
+fi
+cd tabix || exit 1
+git pull || exit 1
+autoreconf -i || exit 1
+./configure || exit 1
+make || exit 1
+sudo -p "Enter SUDO password to install 'jq': " make install || exit 1
+cd .. || exit 1
+
