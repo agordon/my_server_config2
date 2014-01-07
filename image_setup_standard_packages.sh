@@ -30,7 +30,8 @@ apt-get install \
 	liblapasck-test liblapack-dev \
 	libmysqlclient-dev  libsqlite3-dev sqlite3  libatlas-dev \
 	libxml2-dev libxslt-dev libfreetype6-dev libpng-dev libjpeg-dev \
-	libfftw3-bin libfftw3-dev libncurses5-dev libboost-dev-all
+	libfftw3-bin libfftw3-dev libncurses5-dev libboost-dev-all \
+	ruby libbz2-dev libexpat-dev
 
 
 ##
