@@ -17,7 +17,7 @@ fi
 ##
 apt-get update -y
 apt-get upgrade -y
-apt-get install \
+apt-get install -y \
        	build-essential clang gfortran 
 	autoconf automake libtool gettext autoconf-archive \
 	git mercurial vim ctags vim-scripts scons meld cmake \
