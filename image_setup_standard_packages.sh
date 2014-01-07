@@ -18,7 +18,7 @@ fi
 apt-get update -y
 apt-get upgrade -y
 apt-get install -y \
-       	build-essential clang gfortran 
+       	build-essential clang gfortran \
 	autoconf automake libtool gettext autoconf-archive \
 	git mercurial vim ctags vim-scripts scons meld cmake \
 	unzip less graphviz gnuplot gawk \
@@ -31,7 +31,7 @@ apt-get install -y \
 	libmysqlclient-dev  libsqlite3-dev sqlite3  libatlas-dev \
 	libxml2-dev libxslt-dev libfreetype6-dev libpng-dev libjpeg-dev \
 	libfftw3-bin libfftw3-dev libncurses5-dev libboost-dev-all \
-	ruby libbz2-dev libexpat-dev
+	ruby libbz2-dev libexpat-dev \
 
 
 ##
