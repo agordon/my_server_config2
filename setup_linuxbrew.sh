@@ -62,8 +62,18 @@ bwa
 vcftools
 jq
 https://raw.github.com/agordon/homebrew-science/fc32312c792a9e4b1398e9595d11c12a47cca606/idcoefs.rb
+"
+
+echo "$BREW_PACKAGES" | xargs -I{} brew install "{}"
+
+
+##
+## Step 4:
+##    Install "head only" pacakges
+BREW_HEAD_PACKAGES="
 https://raw.github.com/agordon/lobstr-code/autotools_cleanup/lobSTR.rb
 https://raw.github.com/agordon/bin_scripts/master/gordon_bin_scripts.rb
 "
 
-echo "$BREW_PACKAGES" | xargs -I{} brew install "{}"
+echo "$BREW_HEAD_PACKAGES" | xargs -I{} brew install --HEAD "{}"
+                                                                      
