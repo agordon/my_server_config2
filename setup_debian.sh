@@ -21,7 +21,7 @@ apt-get install -y \
 	build-essential clang gfortran \
 	autoconf automake libtool gettext autoconf-archive \
 	git mercurial vim ctags vim-scripts scons meld cmake \
-	unzip less graphviz gnuplot gawk \
+	unzip less graphviz gnuplot gawk xsel xauth \
 	mysql-client \
 	libcurl3-dev curl \
 	python-dev python-pip \
