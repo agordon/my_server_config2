@@ -35,47 +35,4 @@ apt-get install -y \
 	ruby libbz2-dev libexpat-dev || exit 1
 
 
-##
-## Install Python Pacakges
-## NOTE:
-##    Better install from source to get the lastest versions,
-##    instead of using the pre-packaged debian version of these packages.
-##    (which is why so many '-dev' packages are needed).
-
-# Upgrade “distribute” (Seems to be required, pip can’t handle that)
-easy_install -U distribute
-
-## Use pip to install these packages
-PYTHON_PACKAGES="boto
-awscli
-scipy
-MySQL-python
-biopython
-DendroPy
-Flask
-ipython
-Jinja2
-lxml
-Pygments
-pyasn1
-PyVCF
-termcolor
-matplotlib
-matplotlib-venn"
-echo "$PYTHON_PACKAGES" | xargs -I{} pip install "{}"
-
-
-##
-## Install some Perl PAcakges
-## NOTE:
-##   Start by installing "cpanm"
-curl -L http://cpanmin.us | perl - --self-upgrade
-
-PERL_PACKAGES="App::Ack
-DBD::mysql
-DBD::SQLite
-DBI
-Moo"
-echo "$PERL_PACKAGES" | xargs -I{} cpanm --force "{}"
-
 
