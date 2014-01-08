@@ -34,5 +34,7 @@ apt-get install -y \
 	libcppunit-dev libblas-dev liblapack-dev libatlas-dev \
 	ruby libbz2-dev libexpat-dev || exit 1
 
+## Save space by removing cached packages
+apt-get clean || exit 1
 
 
