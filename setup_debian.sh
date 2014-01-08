@@ -31,7 +31,7 @@ apt-get install -y \
 	libmysqlclient-dev  libsqlite3-dev sqlite3  libatlas-dev \
 	libxml2-dev libxslt-dev libfreetype6-dev libpng-dev libjpeg-dev \
 	libfftw3-bin libfftw3-dev libncurses5-dev libboost-dev \
-	libcppunit-dev libblast-dev libatlas-dev \
+	libcppunit-dev libblas-dev liblapack-dev libatlas-dev \
 	ruby libbz2-dev libexpat-dev || exit 1
 
 
