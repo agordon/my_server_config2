@@ -23,4 +23,5 @@ scp setup_debian.sh \
     setup_perl.sh \
     setup_python.sh \
     setup_linuxbrew.sh \
+    setup_user_data.sh \
     "$DEST": || exit 1
