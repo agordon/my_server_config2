@@ -46,3 +46,13 @@ shopt -s histappend
 ## With the python "aws-cli" pacakge, provide an auto-complete for BASH
 ## see ( https://github.com/aws/aws-cli )
 complete -C aws_completer aws
+
+## Use LinuxBrew for many more packages,
+## Add it to the path
+export LINUXBREWHOME=$HOME/sources/LinuxBrew
+export PATH=$LINUXBREWHOME/bin:$PATH
+
+# LinuxBrew Hack:
+# Explicitly add the defualt PKG_CONFIG directories,
+# See: https://github.com/Homebrew/linuxbrew/issues/47
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib64/pkgconfig /usr/share/pkgconfig:$PKG_CONFIG_PATH
