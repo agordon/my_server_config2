@@ -19,4 +19,8 @@ fi
 
 ## Now copy the files
 ./copy_dot_files.sh "$DEST" || exit 1
-scp image_setup_from_source.sh image_setup_standard_packages.sh "$DEST": || exit 1
+scp setup_debian.sh \
+    setup_perl.sh \
+    setup_python.sh \
+    setup_linuxbrew.sh \
+    "$DEST": || exit 1
