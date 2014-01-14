@@ -21,11 +21,11 @@ apt-get install -y \
 	build-essential clang gfortran \
 	autoconf automake libtool gettext autoconf-archive \
 	git mercurial vim ctags vim-scripts scons meld cmake \
-	unzip less graphviz gnuplot gawk xsel xauth \
-	mysql-client \
+	unzip less graphviz gnuplot gawk xsel xauth flex bison \
+	mysql-client uuid-dev \
 	libcurl3-dev curl \
-	python-dev python-pip \
-	libgcrypt-dev \
+	python-dev python-pip python-docutils \
+	libgcrypt-dev libffi-dev libp11-kit-dev libgnutls-dev\
 	libblas-dev libblas-test \
 	liblapack-test liblapack-dev \
 	libmysqlclient-dev  libsqlite3-dev sqlite3  libatlas-dev \
