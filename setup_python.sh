@@ -26,6 +26,7 @@ easy_install -U distribute
 ## Use pip to install these packages
 PYTHON_PACKAGES="boto
 awscli
+virtualenv
 scipy
 MySQL-python
 biopython
