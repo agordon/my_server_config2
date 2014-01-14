@@ -71,7 +71,7 @@ echo "$BREW_PACKAGES" | xargs -I{} brew install "{}"
 ## Step 4:
 ##    Install "head only" pacakges
 BREW_HEAD_PACKAGES="
-https://raw.github.com/agordon/lobstr-code/autotools_cleanup/lobSTR.rb
+https://raw.github.com/mgymrek/lobstr-code/master/lobSTR.rb
 https://raw.github.com/agordon/bin_scripts/master/gordon_bin_scripts.rb
 "
 
