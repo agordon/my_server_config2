@@ -63,6 +63,12 @@ vcftools
 jq
 idcoefs
 https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/coreutils.rb
+https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/libestr.rb
+https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/libee.rb
+https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/libjsonc.rb
+https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/liblognorm.rb
+https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/librelp.rb
+https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/rsyslogd.rb
 "
 
 echo "$BREW_PACKAGES" | xargs -I{} brew install "{}"
