@@ -62,6 +62,7 @@ bwa
 vcftools
 jq
 idcoefs
+https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/coreutils.rb
 "
 
 echo "$BREW_PACKAGES" | xargs -I{} brew install "{}"
