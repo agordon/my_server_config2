@@ -54,7 +54,7 @@ BREW_PACKAGES="
 tabix
 bedtools
 samtools
-fastx-toolkit
+fastx_toolkit
 blat
 bowtie
 bowtie2
@@ -83,4 +83,3 @@ https://raw.github.com/agordon/bin_scripts/master/gordon_bin_scripts.rb
 "
 
 echo "$BREW_HEAD_PACKAGES" | xargs -I{} brew install --HEAD "{}"
-                                                                      
