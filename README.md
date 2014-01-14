@@ -2,7 +2,8 @@
 
 Start with a clean/minimal Debian 7 image (e.g. `ami-0da18864`), then run:
 ```sh
-$ wget -O- https://raw.github.com/agordon/my_server_config2/master/bootstrap_debian.sh | sh -
+$ wget https://raw.github.com/agordon/my_server_config2/master/bootstrap_debian.sh
+$ ./bootstrap_debian.sh
 ```
 
 This will install debian pacakges (using `setup_debian.sh`),
