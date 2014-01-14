@@ -56,3 +56,4 @@ export PATH=$LINUXBREWHOME/bin:$PATH
 # Explicitly add the defualt PKG_CONFIG directories,
 # See: https://github.com/Homebrew/linuxbrew/issues/47
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig:$PKG_CONFIG_PATH
+export LD_LIBRARY_PATH=$LINUXBREWHOME/lib:$LD_LIBRARY_PATH
