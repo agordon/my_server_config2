@@ -61,7 +61,7 @@ bowtie2
 bwa
 vcftools
 jq
-https://raw.github.com/agordon/homebrew-science/fc32312c792a9e4b1398e9595d11c12a47cca606/idcoefs.rb
+idcoefs
 "
 
 echo "$BREW_PACKAGES" | xargs -I{} brew install "{}"
