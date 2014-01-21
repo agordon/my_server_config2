@@ -22,6 +22,7 @@ fi
 
 # Upgrade “distribute” (Seems to be required, pip can’t handle that)
 easy_install -U distribute
+pip install --upgrade setuptools
 
 ## Use pip to install these packages
 PYTHON_PACKAGES="boto
