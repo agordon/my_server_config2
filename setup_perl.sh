@@ -26,6 +26,17 @@ fi
 ##
 curl -L http://cpanmin.us | perl - --self-upgrade
 
+## On Amazon-Linux,
+## 'cpanm' is installed to '/usr/local/bin' which isn't on the $PATH for root.
+if ! which cpanm > /dev/null ; then
+	if [ -e "/usr/local/bin/cpanm" ] ; then
+		export PATH=/usr/local/bin:$PATH
+	else
+		echo "Error: can't find 'cpanm' in \$PATH after installation" >&2
+		exit 1
+	fi
+fi
+
 ##
 ## Step 2:
 ##    Install some packages
