@@ -42,6 +42,11 @@ fi
 ##    Install some packages
 ##
 PERL_PACKAGES="App::Ack
+Sort::Key::Natural
+Template
+Template::Plugin::Number::Format
+Statistics::Descriptive
+Date::Manip
 DBD::mysql
 DBD::SQLite
 DBI
