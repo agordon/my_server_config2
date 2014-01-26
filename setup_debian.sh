@@ -22,7 +22,7 @@ apt-get install -y \
 	autoconf automake libtool gettext autoconf-archive \
 	git mercurial vim ctags vim-scripts scons meld cmake \
 	unzip less graphviz gnuplot gawk xsel xauth flex bison \
-	pigz pbzip2 heirloom-mailx \
+	pigz pbzip2 heirloom-mailx bc units \
 	mysql-client uuid-dev \
 	libcurl3-dev curl \
 	python-dev python-pip python-docutils \
