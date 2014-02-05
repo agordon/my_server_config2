@@ -45,6 +45,8 @@ PATH=$BREWHOME/bin:$PATH
 ##    Tap a few more sources
 ##
 brew tap homebrew/science
+brew tap agordon/gordon
+brew update
 
 ##
 ## Step 3:
@@ -62,13 +64,14 @@ bwa
 vcftools
 jq
 idcoefs
-https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/coreutils.rb
-https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/libestr.rb
-https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/libee.rb
-https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/libjsonc.rb
-https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/liblognorm.rb
-https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/librelp.rb
-https://raw.github.com/agordon/my_server_config2/master/HomeBrewLocal/rsyslogd.rb
+agordon/gordon/coreutils
+agordon/gordon/libestr
+agordon/gordon/libee
+agordon/gordon/libjsonc
+agordon/gordon/liblognorm
+agordon/gordon/librelp
+agordon/gordon/rsyslogd
+agordon/gordon/xzalpha
 "
 
 echo "$BREW_PACKAGES" | xargs -I{} brew install "{}"
@@ -79,7 +82,8 @@ echo "$BREW_PACKAGES" | xargs -I{} brew install "{}"
 ##    Install "head only" pacakges
 BREW_HEAD_PACKAGES="
 https://raw.github.com/mgymrek/lobstr-code/master/lobSTR.rb
-https://raw.github.com/agordon/bin_scripts/master/gordon_bin_scripts.rb
+agordon/gordon/gordon_bin_scripts
+agordon/gordon/gordon_bio_bin_scripts
 "
 
 echo "$BREW_HEAD_PACKAGES" | xargs -I{} brew install --HEAD "{}"
